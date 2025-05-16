@@ -1,0 +1,218 @@
+ :where([class^="ri-"])::before {
+     content: "\f3c2";
+ }
+
+ body {
+     font-family: 'Vazirmatn', sans-serif;
+     color: #333;
+     background-color: #fff;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: 'Vazirmatn', sans-serif;
+     font-weight: 700;
+ }
+
+ .hero-section {
+     background-image: url('https://readdy.ai/api/search-image?query=elegant%2520fashion%2520boutique%2520scene%2520with%2520minimal%2520clean%2520design%252C%2520soft%2520neutral%2520colors%252C%2520stylish%2520clothing%2520items%2520arranged%2520beautifully%252C%2520natural%2520light%2520coming%2520from%2520the%2520right%2520side%252C%2520creating%2520a%2520bright%2520airy%2520atmosphere%252C%2520white%2520space%2520on%2520the%2520right%2520for%2520text%2520overlay%252C%2520high-end%2520fashion%2520photography%2520style&width=1920&height=800&seq=hero1&orientation=landscape');
+     background-size: cover;
+     background-position: center left;
+     position: relative;
+ }
+
+ .hero-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50%;
+     height: 100%;
+     background: linear-gradient(to left, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 100%);
+ }
+
+ .collection-bg {
+     background-image: url('https://readdy.ai/api/search-image?query=elegant%2520fashion%2520collection%2520display%2520with%2520soft%2520lighting%252C%2520minimal%2520composition%252C%2520high-end%2520clothing%2520items%2520arranged%2520artistically%252C%2520neutral%2520color%2520palette%252C%2520professional%2520fashion%2520photography%2520with%2520subtle%2520shadows%2520and%2520clean%2520background&width=1920&height=600&seq=coll1&orientation=landscape');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+ }
+
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+
+ .custom-checkbox {
+     position: relative;
+     padding-right: 30px;
+     cursor: pointer;
+ }
+
+ .custom-checkbox input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+ }
+
+ .checkmark {
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 20px;
+     width: 20px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+
+ .custom-checkbox input:checked~.checkmark {
+     background-color: #d4a373;
+     border-color: #d4a373;
+ }
+
+ .checkmark:after {
+     content: "";
+     position: absolute;
+     display: none;
+ }
+
+ .custom-checkbox input:checked~.checkmark:after {
+     display: block;
+ }
+
+ .custom-checkbox .checkmark:after {
+     right: 7px;
+     top: 3px;
+     width: 6px;
+     height: 11px;
+     border: solid white;
+     border-width: 0 2px 2px 0;
+     transform: rotate(45deg);
+ }
+
+ .category-card {
+     overflow: hidden;
+     transition: all 0.3s ease;
+ }
+
+ .category-card img {
+     transition: transform 0.5s ease;
+ }
+
+ .category-card:hover img {
+     transform: scale(1.05);
+ }
+
+ .product-card {
+     transition: all 0.3s ease;
+ }
+
+ .product-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+
+ .product-actions {
+     opacity: 0;
+     transition: opacity 0.3s ease;
+ }
+
+ .product-card:hover .product-actions {
+     opacity: 1;
+ }
+
+ .quick-view {
+     transform: translateY(20px);
+     opacity: 0;
+     transition: all 0.3s ease;
+ }
+
+ .product-card:hover .quick-view {
+     transform: translateY(0);
+     opacity: 1;
+ }
+
+ .tab-button {
+     position: relative;
+ }
+
+ .tab-button::after {
+     content: '';
+     position: absolute;
+     bottom: -2px;
+     right: 50%;
+     width: 0;
+     height: 2px;
+     background-color: #d4a373;
+     transition: all 0.3s ease;
+     transform: translateX(50%);
+ }
+
+ .tab-button.active::after {
+     width: 80%;
+ }
+
+ .back-to-top {
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s ease;
+ }
+
+ .back-to-top.visible {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .sticky-header {
+     transition: all 0.3s ease;
+ }
+
+ .sticky-header.scrolled {
+     background-color: white;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .mobile-menu {
+     transform: translateX(100%);
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .mobile-menu.open {
+     transform: translateX(0);
+ }
+
+ .hamburger span {
+     transition: all 0.3s ease;
+ }
+
+ .hamburger.open span:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+ }
+
+ .hamburger.open span:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.open span:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+ }
+
+ .cart-sidebar {
+     transform: translateX(-100%);
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .cart-sidebar.open {
+     transform: translateX(0);
+ }
+
+ @media (max-width: 768px) {
+     .hero-section::before {
+         width: 100%;
+         background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
+     }
+ }

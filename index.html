@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الگانس | بوتیک مد زنانه</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#d4a373", secondary: "#e9c46a" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="sticky-header fixed w-full top-0 z-50 bg-white bg-opacity-95">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="font-['Pacifico'] text-3xl text-primary">logo</a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#" class="text-sm font-medium hover:text-primary transition-colors ml-6">جدیدترین‌ها</a>
+        <a href="#" class="text-sm font-medium hover:text-primary transition-colors">لباس</a>
+        <a href="#" class="text-sm font-medium hover:text-primary transition-colors">اکسسوری</a>
+        <a href="#" class="text-sm font-medium hover:text-primary transition-colors">حراج</a>
+        <a href="#" class="text-sm font-medium hover:text-primary transition-colors">کالکشن‌ها</a>
+      </nav>
+      <!-- Right Icons -->
+      <div class="flex items-center space-x-4">
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden w-10 h-10 flex items-center justify-center hamburger cursor-pointer">
+          <div class="flex flex-col space-y-1.5">
+            <span class="w-6 h-0.5 bg-gray-800 block"></span>
+            <span class="w-6 h-0.5 bg-gray-800 block"></span>
+            <span class="w-6 h-0.5 bg-gray-800 block"></span>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 cursor-pointer relative"
+          id="cartToggle">
+          <i class="ri-shopping-bag-line text-lg"></i>
+          <span
+            class="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-primary text-white text-xs rounded-full"
+            id="cartCount">۰</span>
+        </div>
+        <!-- Wishlist -->
+        <div class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 cursor-pointer">
+          <i class="ri-heart-line text-lg"></i>
+        </div>
+        <!-- User Account -->
+        <div class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 cursor-pointer">
+          <i class="ri-user-line text-lg"></i>
+        </div>
+        <!-- Search -->
+        <div class="relative hidden md:block">
+          <input type="text" placeholder="جستجو..."
+            class="w-40 lg:w-48 py-2 pr-8 pl-4 text-sm border-none bg-gray-100 rounded-full focus:outline-none focus:ring-1 focus:ring-primary" />
+          <div
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed top-0 right-0 w-full h-screen bg-white z-50 flex flex-col p-6">
+    <div class="flex justify-between items-center mb-8">
+      <div class="w-10 h-10 flex items-center justify-center hamburger open cursor-pointer">
+        <div class="flex flex-col space-y-1.5">
+          <span class="w-6 h-0.5 bg-gray-800 block"></span>
+          <span class="w-6 h-0.5 bg-gray-800 block"></span>
+          <span class="w-6 h-0.5 bg-gray-800 block"></span>
+        </div>
+      </div>
+      <a href="#" class="font-['Pacifico'] text-2xl text-primary">logo</a>
+    </div>
+    <div class="relative mb-6">
+      <input type="text" placeholder="جستجو..."
+        class="w-full py-3 pr-10 pl-4 text-sm border-none bg-gray-100 rounded-full focus:outline-none focus:ring-1 focus:ring-primary" />
+      <div
+        class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+        <i class="ri-search-line"></i>
+      </div>
+    </div>
+    <nav class="flex flex-col space-y-6">
+      <a href="#" class="text-lg font-medium py-2 border-b border-gray-100">جدیدترین‌ها</a>
+      <a href="#" class="text-lg font-medium py-2 border-b border-gray-100">لباس</a>
+      <a href="#" class="text-lg font-medium py-2 border-b border-gray-100">اکسسوری</a>
+      <a href="#" class="text-lg font-medium py-2 border-b border-gray-100">حراج</a>
+      <a href="#" class="text-lg font-medium py-2 border-b border-gray-100">کالکشن‌ها</a>
+    </nav>
+    <div class="mt-auto flex flex-col space-y-4">
+      <a href="#" class="flex items-center space-x-2 text-gray-600">
+        <span>حساب کاربری</span>
+        <i class="ri-user-line mr-2"></i>
+      </a>
+      <a href="#" class="flex items-center space-x-2 text-gray-600">
+        <span>علاقه‌مندی‌ها</span>
+        <i class="ri-heart-line mr-2"></i>
+      </a>
+      <a href="#" class="flex items-center space-x-2 text-gray-600" id="mobileCartToggle">
+        <span>سبد خرید (<span id="mobileCartCount">۰</span>)</span>
+        <i class="ri-shopping-bag-line mr-2"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar fixed top-0 left-0 w-full md:w-96 h-screen bg-white z-50 flex flex-col shadow-xl">
+    <div class="flex justify-between items-center p-6 border-b">
+      <button class="w-8 h-8 flex items-center justify-center hover:text-primary" id="closeCart">
+        <i class="ri-close-line text-xl"></i>
+      </button>
+      <h3 class="text-xl font-bold">سبد خرید</h3>
+    </div>
+    <div class="flex-1 overflow-y-auto p-6" id="cartItems">
+      <!-- Cart items will be added here dynamically -->
+      <div class="flex justify-center items-center h-full text-gray-500" id="emptyCartMessage">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gray-300">
+            <i class="ri-shopping-bag-line text-4xl"></i>
+          </div>
+          <p>سبد خرید شما خالی است</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 border-t">
+      <div class="flex justify-between items-center mb-4">
+        <span class="font-medium">مجموع:</span>
+        <span class="text-primary font-bold" id="cartTotal">۰ تومان</span>
+      </div>
+      <button
+        class="w-full bg-primary text-white py-3 font-medium !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap mb-3">
+        تکمیل خرید
+      </button>
+      <button
+        class="w-full border border-gray-300 py-3 font-medium !rounded-button hover:border-primary hover:text-primary transition-all whitespace-nowrap">
+        مشاهده سبد خرید
+      </button>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero-section min-h-[600px] md:min-h-[700px] flex items-center mt-16">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-lg ml-auto">
+        <h5 class="text-primary font-medium mb-2">کالکشن تابستان ۱۴۰۴</h5>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+          سبک خود را در این فصل ارتقا دهید
+        </h1>
+        <p class="text-gray-600 mb-8">
+          جدیدترین کالکشن ما از قطعات شیک طراحی شده برای زن مدرن را کشف کنید.
+          سبک‌های بی‌زمان با چرخشی معاصر.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="bg-primary text-white px-8 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+            خرید کنید
+          </button>
+          <button
+            class="border border-gray-300 px-8 py-3 font-medium !rounded-button hover:border-primary hover:text-primary transition-all whitespace-nowrap">
+            مشاهده کالکشن
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Categories -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        خرید بر اساس دسته‌بندی
+      </h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        کالکشن‌های دقیق ما را کشف کنید که برای ارتقای کمد لباس شما با ظرافت
+        بی‌زمان و سبک معاصر طراحی شده‌اند.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Category 1 -->
+        <div class="category-card rounded-lg overflow-hidden shadow-md group relative">
+          <img
+            src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520dresses%2520collection%2520display%2520with%2520soft%2520neutral%2520colors%252C%2520minimalist%2520composition%252C%2520professional%2520fashion%2520photography%252C%2520clean%2520background%252C%2520subtle%2520lighting%252C%2520high-end%2520boutique%2520style%2520presentation&width=600&height=800&seq=cat1&orientation=portrait"
+            alt="لباس‌ها" class="w-full h-80 object-cover object-top" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-20 flex items-end transition-opacity group-hover:bg-opacity-30">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold mb-2">لباس‌ها</h3>
+              <a href="#"
+                class="inline-block text-white text-sm border-b border-white pb-1 hover:text-primary hover:border-primary transition-colors">مشاهده
+                کالکشن</a>
+            </div>
+          </div>
+        </div>
+        <!-- Category 2 -->
+        <div class="category-card rounded-lg overflow-hidden shadow-md group relative">
+          <img
+            src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520accessories%2520collection%2520display%2520with%2520jewelry%252C%2520bags%252C%2520scarves%2520arranged%2520beautifully%252C%2520soft%2520neutral%2520colors%252C%2520minimalist%2520composition%252C%2520professional%2520fashion%2520photography%252C%2520clean%2520background%252C%2520subtle%2520lighting%252C%2520high-end%2520boutique%2520style%2520presentation&width=600&height=800&seq=cat2&orientation=portrait"
+            alt="اکسسوری" class="w-full h-80 object-cover object-top" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-20 flex items-end transition-opacity group-hover:bg-opacity-30">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold mb-2">اکسسوری</h3>
+              <a href="#"
+                class="inline-block text-white text-sm border-b border-white pb-1 hover:text-primary hover:border-primary transition-colors">مشاهده
+                کالکشن</a>
+            </div>
+          </div>
+        </div>
+        <!-- Category 3 -->
+        <div class="category-card rounded-lg overflow-hidden shadow-md group relative">
+          <img
+            src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520shoes%2520collection%2520display%2520with%2520heels%252C%2520flats%252C%2520boots%2520arranged%2520beautifully%252C%2520soft%2520neutral%2520colors%252C%2520minimalist%2520composition%252C%2520professional%2520fashion%2520photography%252C%2520clean%2520background%252C%2520subtle%2520lighting%252C%2520high-end%2520boutique%2520style%2520presentation&width=600&height=800&seq=cat3&orientation=portrait"
+            alt="کفش‌ها" class="w-full h-80 object-cover object-top" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-20 flex items-end transition-opacity group-hover:bg-opacity-30">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold mb-2">کفش‌ها</h3>
+              <a href="#"
+                class="inline-block text-white text-sm border-b border-white pb-1 hover:text-primary hover:border-primary transition-colors">مشاهده
+                کالکشن</a>
+            </div>
+          </div>
+        </div>
+        <!-- Category 4 -->
+        <div class="category-card rounded-lg overflow-hidden shadow-md group relative">
+          <img
+            src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520new%2520arrivals%2520fashion%2520display%2520with%2520latest%2520trend%2520items%252C%2520soft%2520neutral%2520colors%252C%2520minimalist%2520composition%252C%2520professional%2520fashion%2520photography%252C%2520clean%2520background%252C%2520subtle%2520lighting%252C%2520high-end%2520boutique%2520style%2520presentation&width=600&height=800&seq=cat4&orientation=portrait"
+            alt="جدیدترین‌ها" class="w-full h-80 object-cover object-top" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-20 flex items-end transition-opacity group-hover:bg-opacity-30">
+            <div class="p-6 w-full">
+              <h3 class="text-white text-xl font-bold mb-2">جدیدترین‌ها</h3>
+              <a href="#"
+                class="inline-block text-white text-sm border-b border-white pb-1 hover:text-primary hover:border-primary transition-colors">مشاهده
+                کالکشن</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- New Arrivals Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        جدیدترین‌ها
+      </h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+        جدیدترین قطعات ما را کشف کنید، ساخته شده با مواد با کیفیت و طراحی
+        بی‌زمان.
+      </p>
+      <!-- Tabs -->
+      <div class="flex justify-center mb-12 overflow-x-auto whitespace-nowrap py-2">
+        <div class="flex space-x-1 bg-white rounded-full p-1 shadow-sm">
+          <button class="tab-button active px-6 py-2 text-sm font-medium !rounded-full whitespace-nowrap">
+            همه
+          </button>
+          <button class="tab-button px-6 py-2 text-sm font-medium !rounded-full whitespace-nowrap">
+            کفش‌ها
+          </button>
+          <button class="tab-button px-6 py-2 text-sm font-medium !rounded-full whitespace-nowrap">
+            اکسسوری
+          </button>
+          <button class="tab-button px-6 py-2 text-sm font-medium !rounded-full whitespace-nowrap">
+            تاپ‌ها
+          </button>
+          <button class="tab-button px-6 py-2 text-sm font-medium !rounded-full whitespace-nowrap">
+            لباس‌ها
+          </button>
+        </div>
+      </div>
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Product 1 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="1"
+          data-product-name="بلوز ابریشمی شیک" data-product-price="8999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520silk%2520blouse%2520in%2520cream%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod1&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520silk%2520blouse%2520in%2520cream%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod1&orientation=portrait"
+              alt="بلوز ابریشمی" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">بلوز ابریشمی شیک</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۸,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="2"
+          data-product-name="پیراهن میدی سبز" data-product-price="12999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520midi%2520dress%2520in%2520sage%2520green%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod2&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520midi%2520dress%2520in%2520sage%2520green%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod2&orientation=portrait"
+              alt="پیراهن میدی" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">پیراهن میدی سبز</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۱۲,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="3"
+          data-product-name="کیف چرم شتری" data-product-price="19999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520leather%2520handbag%2520in%2520camel%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod3&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520leather%2520handbag%2520in%2520camel%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod3&orientation=portrait"
+              alt="کیف چرم" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">کیف چرم شتری</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۱۹,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="4"
+          data-product-name="گوشواره حلقه‌ای طلا" data-product-price="4999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520gold%2520hoop%2520earrings%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod4&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520gold%2520hoop%2520earrings%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod4&orientation=portrait"
+              alt="گوشواره طلا" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">گوشواره حلقه‌ای طلا</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۴,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="5"
+          data-product-name="شلوار کتان بژ" data-product-price="7999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520linen%2520pants%2520in%2520beige%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod5&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520linen%2520pants%2520in%2520beige%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod5&orientation=portrait"
+              alt="شلوار کتان" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">شلوار کتان بژ</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۷,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="6"
+          data-product-name="روسری ابریشمی گلدار" data-product-price="5999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520silk%2520scarf%2520in%2520floral%2520pattern%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod6&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520silk%2520scarf%2520in%2520floral%2520pattern%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod6&orientation=portrait"
+              alt="روسری ابریشمی" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">روسری ابریشمی گلدار</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۵,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="7"
+          data-product-name="بوت مچی چرم مشکی" data-product-price="14999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520leather%2520ankle%2520boots%2520in%2520black%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod7&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520leather%2520ankle%2520boots%2520in%2520black%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod7&orientation=portrait"
+              alt="بوت چرم" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">بوت مچی چرم مشکی</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۱۴,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm" data-product-id="8"
+          data-product-name="پلیور کشمیر صورتی" data-product-price="11999000"
+          data-product-image="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520cashmere%2520sweater%2520in%2520soft%2520pink%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod8&orientation=portrait">
+          <div class="relative">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520cashmere%2520sweater%2520in%2520soft%2520pink%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=prod8&orientation=portrait"
+              alt="پلیور کشمیر" class="w-full h-80 object-cover object-top" />
+            <div class="absolute top-3 left-3 product-actions flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 py-3 px-4 quick-view text-center">
+              <span class="text-sm font-medium cursor-pointer hover:text-primary transition-colors">مشاهده سریع</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-medium mb-1">پلیور کشمیر صورتی</h3>
+            <div class="flex justify-between items-center">
+              <button
+                class="add-to-cart w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors !rounded-button">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+              <span class="text-primary font-medium">۱۱,۹۹۹,۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <button
+          class="border border-gray-300 px-8 py-3 font-medium !rounded-button hover:border-primary hover:text-primary transition-all whitespace-nowrap">
+          مشاهده همه محصولات
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Collection Highlights -->
+  <section class="collection-bg py-20 relative">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-xl mx-auto text-center text-white">
+        <h5 class="text-primary font-medium mb-2">نسخه محدود</h5>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          کالکشن ضروریات تابستان
+        </h2>
+        <p class="mb-8">
+          کالکشن انحصاری ما از ضروریات تابستان را کشف کنید، طراحی شده با
+          پارچه‌های با کیفیت و سیلوئت‌های بی‌زمان برای زن مدرن.
+        </p>
+        <button
+          class="bg-white text-gray-900 px-8 py-3 font-medium !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+          مشاهده کالکشن
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter Subscription -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-sm">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">
+            عضویت در خبرنامه ما
+          </h2>
+          <p class="text-gray-600">
+            برای دریافت به‌روزرسانی‌ها درباره محصولات جدید، پیشنهادات ویژه و
+            رویدادهای انحصاری مشترک شوید.
+          </p>
+        </div>
+        <form class="max-w-md mx-auto">
+          <div class="flex flex-col md:flex-row gap-4 mb-4">
+            <button type="submit"
+              class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+              اشتراک
+            </button>
+            <input type="email" placeholder="آدرس ایمیل شما"
+              class="flex-1 px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary text-sm" />
+          </div>
+          <div class="mt-4">
+            <label class="custom-checkbox text-sm text-gray-600">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              من موافقم که ایمیل‌های تبلیغاتی دریافت کنم و
+              <a href="#" class="text-primary hover:underline">سیاست حریم خصوصی</a>
+              را می‌پذیرم
+            </label>
+          </div>
+          <div class="mt-6 text-center text-sm text-gray-500">
+            <p>با ثبت‌نام، ۱۰٪ تخفیف برای اولین سفارش خود دریافت کنید!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- About -->
+        <div>
+          <a href="#" class="font-['Pacifico'] text-2xl text-primary mb-4 inline-block">logo</a>
+          <p class="text-gray-400 mb-6">
+            ارتقای سبک روزمره با ظرافت بی‌زمان. صنعتگری با کیفیت و مد پایدار
+            برای زن مدرن.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-twitter-x-line"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-pinterest-line"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">لینک‌های سریع</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">درباره ما</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">تماس با ما</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">سوالات متداول</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">راهنمای سایز</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">ارسال و مرجوعی</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">سیاست حریم خصوصی</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Categories -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">دسته‌بندی‌ها</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">جدیدترین‌ها</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">لباس‌ها</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">تاپ‌ها</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">اکسسوری</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">کفش‌ها</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-primary transition-colors">حراج</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">تماس با ما</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start space-x-3">
+              <span class="text-gray-400">تهران، خیابان ولیعصر، خیابان مد، پلاک ۱۲۳</span>
+              <div class="w-5 h-5 flex items-center justify-center mt-1 text-primary mr-3">
+                <i class="ri-map-pin-line"></i>
+              </div>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="text-gray-400">۰۲۱-۱۲۳۴۵۶۷۸</span>
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-phone-line"></i>
+              </div>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="text-gray-400">info@eleganceboutique.ir</span>
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-mail-line"></i>
+              </div>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="text-gray-400">شنبه تا پنجشنبه: ۱۰ صبح - ۸ شب</span>
+              <div class="w-5 h-5 flex items-center justify-center text-primary mr-3">
+                <i class="ri-time-line"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            © ۱۴۰۴ بوتیک الگانس. تمامی حقوق محفوظ است.
+          </p>
+          <div class="flex items-center space-x-4">
+            <div class="w-8 h-5 flex items-center justify-center">
+              <i class="ri-apple-fill text-xl text-gray-400"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center">
+              <i class="ri-paypal-fill text-xl text-gray-400"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center">
+              <i class="ri-mastercard-fill text-xl text-gray-400"></i>
+            </div>
+            <div class="w-8 h-5 flex items-center justify-center">
+              <i class="ri-visa-fill text-xl text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Cookie Consent Banner -->
+  <div
+    class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg z-50 flex flex-col md:flex-row justify-between items-center gap-4"
+    id="cookieConsent">
+    <div class="text-sm">
+      <p>
+        ما از کوکی‌ها برای بهبود تجربه شما استفاده می‌کنیم. با ادامه بازدید از
+        این سایت، شما با استفاده ما از کوکی‌ها موافقت می‌کنید.
+        <a href="#" class="text-primary hover:underline">بیشتر بدانید</a>
+      </p>
+    </div>
+    <div class="flex gap-2">
+      <button
+        class="text-sm px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+        id="acceptCookies">
+        پذیرش همه
+      </button>
+      <button
+        class="text-sm px-4 py-2 border border-gray-300 !rounded-button hover:border-primary hover:text-primary transition-all whitespace-nowrap"
+        id="declineCookies">
+        رد کردن
+      </button>
+    </div>
+  </div>
+  <!-- Size Guide Modal -->
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center" id="sizeGuideModal">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <button class="w-8 h-8 flex items-center justify-center hover:text-primary" id="closeSizeGuide">
+            <i class="ri-close-line text-xl"></i>
+          </button>
+          <h3 class="text-xl font-bold">راهنمای سایز</h3>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="py-3 px-4 text-right">سایز اروپا</th>
+                <th class="py-3 px-4 text-right">سایز آمریکا</th>
+                <th class="py-3 px-4 text-right">باسن (سانتی‌متر)</th>
+                <th class="py-3 px-4 text-right">کمر (سانتی‌متر)</th>
+                <th class="py-3 px-4 text-right">سینه (سانتی‌متر)</th>
+                <th class="py-3 px-4 text-right">سایز</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="py-3 px-4">۳۲-۳۴</td>
+                <td class="py-3 px-4">۰-۲</td>
+                <td class="py-3 px-4">۸۶-۸۹</td>
+                <td class="py-3 px-4">۶۱-۶۴</td>
+                <td class="py-3 px-4">۷۹-۸۱</td>
+                <td class="py-3 px-4">XS</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-3 px-4">۳۶-۳۸</td>
+                <td class="py-3 px-4">۴-۶</td>
+                <td class="py-3 px-4">۹۱-۹۴</td>
+                <td class="py-3 px-4">۶۶-۶۹</td>
+                <td class="py-3 px-4">۸۴-۸۶</td>
+                <td class="py-3 px-4">S</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-3 px-4">۴۰-۴۲</td>
+                <td class="py-3 px-4">۸-۱۰</td>
+                <td class="py-3 px-4">۹۷-۹۹</td>
+                <td class="py-3 px-4">۷۱-۷۴</td>
+                <td class="py-3 px-4">۸۹-۹۱</td>
+                <td class="py-3 px-4">M</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-3 px-4">۴۴-۴۶</td>
+                <td class="py-3 px-4">۱۲-۱۴</td>
+                <td class="py-3 px-4">۱۰۲-۱۰۴</td>
+                <td class="py-3 px-4">۷۶-۷۹</td>
+                <td class="py-3 px-4">۹۴-۹۷</td>
+                <td class="py-3 px-4">L</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">۴۸-۵۰</td>
+                <td class="py-3 px-4">۱۶-۱۸</td>
+                <td class="py-3 px-4">۱۰۷-۱۰۹</td>
+                <td class="py-3 px-4">۸۱-۸۴</td>
+                <td class="py-3 px-4">۹۹-۱۰۲</td>
+                <td class="py-3 px-4">XL</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-6">
+          <h4 class="font-medium mb-2">نحوه اندازه‌گیری</h4>
+          <p class="text-sm text-gray-600 mb-4">
+            برای بهترین تناسب، اندازه‌گیری‌های خود را در حالی که لباس‌های زیر
+            مشابه آنچه با لباس خواهید پوشید، انجام دهید.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>
+              <span class="font-medium">سینه:</span> دور پرحجم‌ترین قسمت سینه
+              خود را اندازه بگیرید، نوار را موازی با زمین نگه دارید.
+            </li>
+            <li>
+              <span class="font-medium">کمر:</span> دور کمر طبیعی خود را
+              اندازه بگیرید، نوار را به طور راحت شل نگه دارید.
+            </li>
+            <li>
+              <span class="font-medium">باسن:</span> دور پرحجم‌ترین قسمت باسن
+              خود را، حدود ۲۰ سانتی‌متر زیر کمر طبیعی خود اندازه بگیرید.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quick View Modal -->
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center" id="quickViewModal">
+    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <button class="w-8 h-8 flex items-center justify-center hover:text-primary" id="closeQuickView">
+            <i class="ri-close-line text-xl"></i>
+          </button>
+          <h3 class="text-xl font-bold">مشاهده سریع</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="relative order-2 md:order-1">
+            <img
+              src="https://readdy.ai/api/search-image?query=elegant%2520women%2527s%2520silk%2520blouse%2520in%2520cream%2520color%2520on%2520minimal%2520background%252C%2520professional%2520fashion%2520product%2520photography%252C%2520clean%2520lighting%252C%2520high-end%2520boutique%2520style&width=600&height=800&seq=qv1&orientation=portrait"
+              alt="بلوز ابریشمی" class="w-full h-auto rounded-lg" />
+            <div class="absolute top-3 left-3 flex flex-col gap-2">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                <i class="ri-share-line"></i>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="text-2xl font-bold mb-2">بلوز ابریشمی شیک</h2>
+            <div class="flex items-center mb-4">
+              <span class="text-sm text-gray-500 ml-2">(۲۴ نظر)</span>
+              <div class="flex text-primary">
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-xl font-medium text-primary mb-4">
+              ۸,۹۹۹,۰۰۰ تومان
+            </p>
+            <p class="text-gray-600 mb-6">
+              بلوز ابریشمی لوکس با برش راحت و آویز شیک. دارای یقه کلاسیک و
+              دکمه‌های جلو. مناسب برای پوشیدن در محل کار و مناسبت‌های شبانه.
+            </p>
+            <div class="mb-6">
+              <h3 class="font-medium mb-2">رنگ</h3>
+              <div class="flex space-x-2">
+                <div class="w-8 h-8 rounded-full bg-[#264653] cursor-pointer"></div>
+                <div class="w-8 h-8 rounded-full bg-[#000000] cursor-pointer"></div>
+                <div class="w-8 h-8 rounded-full bg-[#f8e7d1] border-2 border-primary cursor-pointer"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <h3 class="font-medium mb-2">سایز</h3>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full text-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                  XL
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full text-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                  L
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center border border-primary rounded-full text-sm text-primary whitespace-nowrap">
+                  M
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full text-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                  S
+                </button>
+                <button
+                  class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full text-sm hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                  XS
+                </button>
+              </div>
+              <button class="text-sm text-primary mt-2 hover:underline" id="openSizeGuide">
+                راهنمای سایز
+              </button>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+              <button
+                class="flex-1 bg-primary text-white py-3 font-medium !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">
+                افزودن به سبد خرید
+              </button>
+              <div class="flex items-center border border-gray-300 rounded-lg">
+                <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-primary"
+                  id="increaseQuantity">
+                  <i class="ri-add-line"></i>
+                </button>
+                <input type="number" value="1" min="1" class="w-12 h-10 text-center border-none" id="quantity" />
+                <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-primary"
+                  id="decreaseQuantity">
+                  <i class="ri-subtract-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-2 text-sm text-gray-600">
+              <div class="flex items-center">
+                <span>ارسال رایگان برای سفارش‌های بالای ۱۰,۰۰۰,۰۰۰ تومان</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-truck-line"></i>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span>مرجوعی رایگان ۳۰ روزه</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-refresh-line"></i>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span>پرداخت امن</span>
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-secure-payment-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Back to Top Button -->
+  <button
+    class="back-to-top fixed bottom-6 left-6 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg opacity-0 invisible">
+    <i class="ri-arrow-up-line text-lg"></i>
+  </button>
+  <!-- Floating Size Guide Button -->
+  <button
+    class="fixed bottom-6 right-6 bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg flex items-center space-x-2 hover:bg-primary hover:text-white transition-colors z-30"
+    id="floatingSizeGuide">
+    <span class="text-sm font-medium">راهنمای سایز</span>
+    <i class="ri-ruler-line mr-2"></i>
+  </button>
+  <script src="script.js"></script>  
+</body>
+
+</html>
